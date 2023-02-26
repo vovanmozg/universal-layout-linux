@@ -1345,6 +1345,12 @@
       <variantList>
         <variant>
           <configItem>
+            <name>unieng</name>
+            <description>English Universal</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>chr</name>
             <!-- Keyboard indicator for Cherokee layouts -->
             <shortDescription>chr</shortDescription>
@@ -4720,6 +4726,12 @@
         </languageList>
       </configItem>
       <variantList>
+        <variant>
+          <configItem>
+            <name>unirus</name>
+            <description>Russian Universal</description>
+          </configItem>
+        </variant>
         <variant>
           <configItem>
             <name>phonetic</name>
