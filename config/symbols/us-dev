@@ -4,42 +4,35 @@ xkb_symbols "us-dev" {
     include "us(basic)"
     name[Group1]= "English for developer";
 
-    key <TLDE> { [ apostrophe, quotedbl, grave, U0301 ] };
-    key <AE01> { [ exclam, 1, onesuperior, exclamdown ] };
-    key <AE02> { [ at, 2, twosuperior, onehalf ] };
-    key <AE03> { [ numbersign, 3, threesuperior, onethird ] };
-    key <AE04> { [ dollar, 4 ] };
-    key <AE05> { [ percent, 5, permille ] };
-    key <AE06> { [ asciicircum, 6 ] };
-    key <AE07> { [ question, 7, questiondown ] };
-    key <AE08> { [ asterisk, 8, infinity, doublelowquotemark ] };
-    key <AE09> { [ parenleft, 9, leftdoublequotemark, leftsinglequotemark ] };
-    key <AE10> { [ parenright, 0, rightdoublequotemark, rightsinglequotemark ] };
-    key <AE11> { [ minus, underscore, endash, emdash ] };
+    // First row
+    key <TLDE> { [ grave, asciitilde, dollar, U0301 ] };
+    key <AE01> { [ exclam, 1, exclam ] };
+    key <AE02> { [ braceleft, 2, at ] };
+    key <AE03> { [ braceright, 3, numbersign ] };
+    key <AE04> { [ ampersand, 4, dollar ] };
+    key <AE05> { [ percent, 5, percent ] };
+    key <AE06> { [ minus, 6, asciicircum ] };
+    key <AE07> { [ less, 7, ampersand ] };
+    key <AE08> { [ greater, 8, asterisk ] };
+    key <AE09> { [ parenleft, 9 ] };
+    key <AE10> { [ parenright, 0 ] };
+    key <AE11> { [ underscore, asciicircum, endash, emdash ] };
     key <AE12> { [ equal, plus, notequal, plusminus ] };
 
-    key <BKSL> { [ slash, bar, backslash] };
+    key <BKSL> { [ asterisk, bar, slash, backslash] };
 
-    key <AD03> { [ e, E, EuroSign ] };
-    key <AD07> { [ u, U, udiaeresis, Udiaeresis ] };
-    key <AD08> { [ i, I, idotless, Iabovedot ] };
-    key <AD09> { [ o, O, odiaeresis, Odiaeresis ] };
-    key <AD11> { [ bracketleft,	braceleft, bracketleft, braceleft ] };
-    key <AD12> { [ bracketright, braceright, bracketright, braceright ] };
+    // Second row
+    key <AD11> { [ bracketleft,	at ] };
+    key <AD12> { [ bracketright, numbersign ] };
 
-    key <AC01> { [ a, A, adiaeresis, Adiaeresis ] };
-    key <AC02> { [ s, S, scedilla, Scedilla ] };
-    key <AC05> { [ g, G, gbreve, Gbreve ] };
-    key <AC06> { [ h, H, U20BD ] };
-    key <AC10> { [ semicolon, colon, guillemotleft, leftarrow ] };
-    key <AC11> { [ asciitilde, asciitilde, guillemotright, rightarrow ] };
+    // Third row
+    key <AC10> { [ colon, semicolon, guillemotleft, leftarrow ] };
+    key <AC11> { [ apostrophe, quotedbl, guillemotright, rightarrow ] };
 
-    key <AB02> { [ x, X, multiply ] };
-    key <AB03> { [ c, C, ccedilla, Ccedilla ] };
-    key <AB06> { [ n, N, U2116 ] };
-    key <AB08> { [ comma, semicolon, less, lessthanequal ] };
-    key <AB09> { [ period, colon, greater, greaterthanequal ] };
-    key <AB10> { [ ampersand, ampersand, ampersand,  ellipsis ] };
+    // Forth row
+    key <AB08> { [ comma, backslash, less, lessthanequal ] };
+    key <AB09> { [ period, bar, greater, greaterthanequal ] };
+    key <AB10> { [ slash, question, ellipsis ] };
 
     include "level3(ralt_switch)"
 };
