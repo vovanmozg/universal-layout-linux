@@ -1,0 +1,45 @@
+default partial alphanumeric_keys
+xkb_symbols "us2" {
+
+    include "us(basic)"
+    name[Group1]= "Universal English";
+
+    key <TLDE> { [ apostrophe, quotedbl, grave, U0301 ] };
+    key <AE01> { [ exclam, 1, onesuperior, exclamdown ] };
+    key <AE02> { [ at, 2, twosuperior, onehalf ] };
+    key <AE03> { [ numbersign, 3, threesuperior, onethird ] };
+    key <AE04> { [ dollar, 4 ] };
+    key <AE05> { [ percent, 5, permille ] };
+    key <AE06> { [ asciicircum, 6 ] };
+    key <AE07> { [ question, 7, questiondown ] };
+    key <AE08> { [ asterisk, 8, infinity, doublelowquotemark ] };
+    key <AE09> { [ parenleft, 9, leftdoublequotemark, leftsinglequotemark ] };
+    key <AE10> { [ parenright, 0, rightdoublequotemark, rightsinglequotemark ] };
+    key <AE11> { [ minus, underscore, endash, emdash ] };
+    key <AE12> { [ equal, plus, notequal, plusminus ] };
+
+    key <BKSL> { [ slash, bar, backslash] };
+
+    key <AD03> { [ e, E, EuroSign ] };
+    key <AD07> { [ u, U, udiaeresis, Udiaeresis ] };
+    key <AD08> { [ i, I, idotless, Iabovedot ] };
+    key <AD09> { [ o, O, odiaeresis, Odiaeresis ] };
+    key <AD11> { [ bracketleft,	braceleft, bracketleft, braceleft ] };
+    key <AD12> { [ bracketright, braceright, bracketright, braceright ] };
+
+    key <AC01> { [ a, A, adiaeresis, Adiaeresis ] };
+    key <AC02> { [ s, S, scedilla, Scedilla ] };
+    key <AC05> { [ g, G, gbreve, Gbreve ] };
+    key <AC06> { [ h, H, U20BD ] };
+    key <AC10> { [ semicolon, colon, guillemotleft, leftarrow ] };
+    key <AC11> { [ asciitilde, asciitilde, guillemotright, rightarrow ] };
+
+    key <AB02> { [ x, X, multiply ] };
+    key <AB03> { [ c, C, ccedilla, Ccedilla ] };
+    key <AB06> { [ n, N, U2116 ] };
+    key <AB08> { [ comma, semicolon, less, lessthanequal ] };
+    key <AB09> { [ period, colon, greater, greaterthanequal ] };
+    key <AB10> { [ ampersand, ampersand, ampersand,  ellipsis ] };
+
+    include "level3(ralt_switch)"
+};

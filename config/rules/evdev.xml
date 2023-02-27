@@ -1345,12 +1345,6 @@
       <variantList>
         <variant>
           <configItem>
-            <name>unieng</name>
-            <description>English Universal</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>chr</name>
             <!-- Keyboard indicator for Cherokee layouts -->
             <shortDescription>chr</shortDescription>
@@ -1520,6 +1514,17 @@
            </configItem>
          </variant>
       </variantList>
+    </layout>
+    <layout>
+      <configItem>
+        <name>us2</name>
+        <shortDescription>us2</shortDescription>
+        <description>English Universal</description>
+        <languageList>
+          <iso639Id>eng</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList/>
     </layout>
     <layout>
       <configItem>
