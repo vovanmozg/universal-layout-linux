@@ -1,8 +1,8 @@
 default partial alphanumeric_keys
-xkb_symbols "us2" {
+xkb_symbols "us-dev" {
 
     include "us(basic)"
-    name[Group1]= "Universal English";
+    name[Group1]= "English for developer";
 
     key <TLDE> { [ apostrophe, quotedbl, grave, U0301 ] };
     key <AE01> { [ exclam, 1, onesuperior, exclamdown ] };
