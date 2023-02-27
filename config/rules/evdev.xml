@@ -1347,7 +1347,7 @@
       <configItem>
         <name>ru-dev</name>
         <shortDescription>ru-dev</shortDescription>
-        <description>Russian For Developer</description>
+        <description>Russian for developer</description>
         <languageList>
           <iso639Id>rus</iso639Id>
         </languageList>
