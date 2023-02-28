@@ -5,7 +5,7 @@ xkb_symbols "us-dev" {
     name[Group1]= "English for developer";
 
     // First row
-    key <TLDE> { [ grave, asciitilde, dollar, U0301 ] };
+    key <TLDE> { [ grave, asciitilde ] };
     key <AE01> { [ exclam, 1, exclam ] };
     key <AE02> { [ braceleft, 2, at ] };
     key <AE03> { [ braceright, 3, numbersign ] };
