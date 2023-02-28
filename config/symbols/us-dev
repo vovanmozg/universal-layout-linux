@@ -10,8 +10,8 @@ xkb_symbols "us-dev" {
     key <AE02> { [ braceleft, 2, at ] };
     key <AE03> { [ braceright, 3, numbersign ] };
     key <AE04> { [ ampersand, 4, dollar ] };
-    key <AE05> { [ percent, 5, percent ] };
-    key <AE06> { [ minus, 6, asciicircum ] };
+    key <AE05> { [ minus, 5, percent ] };
+    key <AE06> { [ percent, 6, asciicircum ] };
     key <AE07> { [ less, 7, ampersand ] };
     key <AE08> { [ greater, 8, asterisk ] };
     key <AE09> { [ parenleft, 9 ] };
@@ -19,7 +19,7 @@ xkb_symbols "us-dev" {
     key <AE11> { [ underscore, asciicircum, endash, emdash ] };
     key <AE12> { [ equal, plus, notequal, plusminus ] };
 
-    key <BKSL> { [ asterisk, bar, slash, backslash] };
+    key <BKSL> { [ asterisk, dollar, slash, backslash] };
 
     // Second row
     key <AD11> { [ bracketleft,	at ] };
