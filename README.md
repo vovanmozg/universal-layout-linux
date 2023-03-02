@@ -46,13 +46,11 @@ sudo bash bin/install.sh
  ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
 ```
 
-## Credits
-
-Ссылки:
-https://github.com/moigagoo/universal-layout-linux
-https://github.com/braindefender/universal-layout
-https://github.com/tonsky/Universal-Layout
-https://github.com/neochief/birman-typography-layouts-for-ubuntu/blob/master/symbols/typo-birman-ru
-https://ilyabirman.ru/typography-layout/
-https://stackoverflow.com/questions/14981498/modified-colemak-for-programming
+### Ссылки:
+- https://github.com/moigagoo/universal-layout-linux
+- https://github.com/braindefender/universal-layout
+- https://github.com/tonsky/Universal-Layout
+- https://github.com/neochief/birman-typography-layouts-for-ubuntu/blob/master/symbols/typo-birman-ru
+- https://ilyabirman.ru/typography-layout/
+- https://stackoverflow.com/questions/14981498/modified-colemak-for-programming
 
