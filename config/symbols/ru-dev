@@ -2,31 +2,60 @@ partial alphanumeric_keys
 xkb_symbols "ru-dev" {
 
     include "ru(common)"
-    name[Group1]= "Russian for developer";
+    name[Group1]= "Ru for TS/Ruby developer";
 
-    key <AE01> { [ exclam, 1 ] };
-    key <AE02> { [ quotedbl, 2 ] };
-    key <AE03> { [ numerosign, 3 ] };
-    key <AE04> { [ semicolon, 4 ] };
-    key <AE05> { [ percent, 5  ] };
-    key <AE06> { [ colon, 6 ] };
-    key <AE07> { [ question, 7 ] };
-    key <AE08> { [ asterisk, 8 ] };
-    key <AE09> { [ parenleft, 9  ] };
-    key <AE10> { [ parenright, 0 ] };
-    key <AE11> { [ minus, underscore, endash, emdash ] };
-    key <AE12> { [ equal, plus, notequal, plusminus ] };
+    // First row
+    //             _                  /
+    key <TLDE> { [ minus,             slash ] };
+    //             !
+    key <AE01> { [ exclam,            1 ] };
+    //             "
+    key <AE02> { [ quotedbl,          2 ] };
+    //             №
+    key <AE03> { [ numerosign,        3 ] };
+    //             &
+    key <AE04> { [ ampersand,         4 ] };
+    //             @
+    key <AE05> { [ at,                5 ] };
+    //             :
+    key <AE06> { [ percent,           6 ] };
+    //             ?
+    key <AE07> { [ question,          7 ] };
+    //             /
+    key <AE08> { [ slash,             8 ] };
+    //             (
+    key <AE09> { [ parenleft,         9  ] };
+    //             )
+    key <AE10> { [ parenright,        0 ] };
+    //             _                  ^                  –                  —
+    key <AE11> { [ underscore,        asciicircum,       endash,            emdash ] };
+    //             =      +           ≠                  ±
+    key <AE12> { [ equal, plus,       notequal,          plusminus ] };
 
-    key <AD11> { [ Cyrillic_ha, Cyrillic_HA, bracketleft, braceleft ] };
-    key <AD12> { [ Cyrillic_be, Cyrillic_BE, bracketright, braceright ] };
+    //             *                  $                  /                  \
+    key <BKSL> { [ asterisk,          dollar,            slash,             backslash] };
 
-    key <AC10> { [ Cyrillic_zhe, Cyrillic_ZHE, guillemotleft, leftarrow]};
-    key <AC11> { [ Cyrillic_e, Cyrillic_E, guillemotright, rightarrow ] };
+    //             е                  Е                  ё                  Ё
+    key <AD05> { [ Cyrillic_ie,       Cyrillic_IE,       Cyrillic_io,       Cyrillic_IO ] };
+    //             х                  Х                  [                  {
+    key <AD11> { [ Cyrillic_ha,       Cyrillic_HA,       bracketleft,       braceleft ] };
+    //             б                  Б                  ]                  }
+    key <AD12> { [ Cyrillic_be,       Cyrillic_BE,       bracketright,      braceright ] };
 
+    //             ж                  Ж                  «                  ←
+    key <AC10> { [ Cyrillic_zhe,      Cyrillic_ZHE,      guillemotleft,     leftarrow]};
+    //             э                  Э                  »                  →
+    key <AC11> { [ Cyrillic_e,        Cyrillic_E,        guillemotright,    rightarrow ] };
+
+    //             ь                  Ь                  ъ                  Ъ
     key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN, Cyrillic_hardsign, Cyrillic_HARDSIGN ] };
-    key <AB08> { [ comma, semicolon, less, lessthanequal ] };
-    key <AB09> { [ period, colon, greater, greaterthanequal ] };
-    key <AB10> { [ Cyrillic_yu, Cyrillic_YU, ampersand,  ellipsis ] };
+    //             ,                  ;                  <                  ≤
+    key <AB08> { [ comma,             semicolon,         less,              lessthanequal ] };
+    //             .                  :                  >                  ≥
+    key <AB09> { [ period,            colon,             greater,           greaterthanequal ] };
+    //             ю                  Ю                  …
+    key <AB10> { [ Cyrillic_yu,       Cyrillic_YU,       ellipsis ] };
+
 
     include "level3(ralt_switch)"
 };

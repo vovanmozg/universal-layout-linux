@@ -2,37 +2,58 @@ default partial alphanumeric_keys
 xkb_symbols "us-dev" {
 
     include "us(basic)"
-    name[Group1]= "English for developer";
+    name[Group1]= "En for TS/Ruby developer";
 
     // First row
-    key <TLDE> { [ grave, asciitilde ] };
-    key <AE01> { [ exclam, 1, exclam ] };
-    key <AE02> { [ braceleft, 2, at ] };
-    key <AE03> { [ braceright, 3, numbersign ] };
-    key <AE04> { [ ampersand, 4, dollar ] };
-    key <AE05> { [ minus, 5, percent ] };
-    key <AE06> { [ percent, 6, asciicircum ] };
-    key <AE07> { [ less, 7, ampersand ] };
-    key <AE08> { [ greater, 8, asterisk ] };
-    key <AE09> { [ parenleft, 9 ] };
-    key <AE10> { [ parenright, 0 ] };
-    key <AE11> { [ underscore, asciicircum, endash, emdash ] };
-    key <AE12> { [ equal, plus, notequal, plusminus ] };
+    //             _                          ~
+    key <TLDE> { [ minus,                     asciitilde ] };
+    //             !                          !
+    key <AE01> { [ exclam,       1 ] };
+    //             {                          @
+    key <AE02> { [ braceleft,    2,           at ] };
+    //             }                          #
+    key <AE03> { [ braceright,   3,           numbersign ] };
+    //             &                          $
+    key <AE04> { [ ampersand,    4,           dollar ] };
+    //             @                          %
+    key <AE05> { [ at,           5,           percent ] };
+    //             %                          ^
+    key <AE06> { [ percent,      6,           asciicircum ] };
+    //             <                          &
+    key <AE07> { [ less,         7,           ampersand ] };
+    //             >                          *
+    key <AE08> { [ greater,      8,           asterisk ] };
+    //             (
+    key <AE09> { [ parenleft,    9 ] };
+    //             )
+    key <AE10> { [ parenright,   0 ] };
+    //             _             ^            –               —
+    key <AE11> { [ underscore,   asciicircum, endash,         emdash ] };
+    //             =             +            ≠               ±
+    key <AE12> { [ equal,        plus,        notequal,       plusminus ] };
 
-    key <BKSL> { [ asterisk, dollar, slash, backslash] };
+    //             *             $            /               \
+    key <BKSL> { [ asterisk,     dollar,      slash,          backslash] };
 
     // Second row
-    key <AD11> { [ bracketleft,	at ] };
+    //             [             `
+    key <AD11> { [ bracketleft,	 grave ] };
+    //             ]             #
     key <AD12> { [ bracketright, numbersign ] };
 
     // Third row
-    key <AC10> { [ colon, semicolon, guillemotleft, leftarrow ] };
-    key <AC11> { [ apostrophe, quotedbl, guillemotright, rightarrow ] };
+    //             :             ;            «               ←
+    key <AC10> { [ colon,        semicolon,   guillemotleft,  leftarrow ] };
+    //             '             "            »               →
+    key <AC11> { [ apostrophe,   quotedbl,    guillemotright, rightarrow ] };
 
     // Forth row
-    key <AB08> { [ comma, backslash, less, lessthanequal ] };
-    key <AB09> { [ period, bar, greater, greaterthanequal ] };
-    key <AB10> { [ slash, question, ellipsis ] };
+    //             ,             \            <               ≤
+    key <AB08> { [ comma,        backslash,   less,           lessthanequal ] };
+    //             .             |            >               ≥
+    key <AB09> { [ period,       bar,         greater,        greaterthanequal ] };
+    //             /             ?            …
+    key <AB10> { [ slash,        question,    ellipsis ] };
 
     include "level3(ralt_switch)"
 };
